@@ -1,6 +1,6 @@
-jQuery.fn.validaemail = function (email) {
-  this.blur(function () {
-    if (this.value == '') {
+jQuery.fn.validaEmail = function (email) {
+  this.change(function(){
+    if (!this.value){
       return false;
     }
     var EMAIL = this.value;
